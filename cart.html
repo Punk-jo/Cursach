@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Корзина - Планета канцелярии</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="header-logo">
+            🌟 Планета канцелярии
+        </a>
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="sale.html" class="nav-link">Акции</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <div class="cart-btn">
+                <button class="btn">Корзина 🛒</button>
+                <span class="cart-counter" id="cart-counter">3</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="space" style="height: 50vh;">
+        <div class="stars"></div>
+        <h1 class="title">Ваша корзина</h1>
+        <p class="subtitle">Проверьте выбранные товары перед оформлением</p>
+    </div>
+
+    <div class="content">
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h3>Ручки-невесомость</h3>
+                        <p>Пишут плавно, как по воздуху. 5 цветов в наборе.</p>
+                    </div>
+                    <div class="item-price">
+                        <p>120 ₽ × 2 = 240 ₽</p>
+                        <div class="item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <span>2</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-btn">×</button>
+                </div>
+                
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h3>Тетради Галактика</h3>
+                        <p>96 листов с мерцающими страницами. Твердая обложка.</p>
+                    </div>
+                    <div class="item-price">
+                        <p>250 ₽ × 1 = 250 ₽</p>
+                        <div class="item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <span>1</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-btn">×</button>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Итого</h3>
+                <div class="summary-row">
+                    <span>Товары (3)</span>
+                    <span>490 ₽</span>
+                </div>
+                <div class="summary-row">
+                    <span>Доставка</span>
+                    <span>Бесплатно</span>
+                </div>
+                <div class="summary-row total">
+                    <span>К оплате</span>
+                    <span>490 ₽</span>
+                </div>
+                <button class="btn" style="width: 100%; margin-top: 1rem;">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Магазин канцелярии "Планета"</p>
+        <p>г. Усинск, ул. Строителей, 5А</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

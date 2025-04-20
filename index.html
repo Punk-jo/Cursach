@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Планета канцелярии - Усинск</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="#" class="header-logo">
+            🌟 Планета канцелярии
+        </a>
+        <nav class="header-nav">
+            <a href="#" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="sale.html" class="nav-link">Акции</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <div class="cart-btn">
+                <button class="btn">Корзина 🛒</button>
+                <span class="cart-counter" id="cart-counter">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="space">
+        <div class="stars"></div>
+        <div class="comet" style="top: 20%; left: 10%; animation-delay: 2s;"></div>
+        <div class="comet" style="top: 70%; left: 30%; animation-delay: 5s;"></div>
+        <div class="planet"></div>
+        <h1 class="title">Планета канцелярии</h1>
+        <p class="subtitle">Ваша вселенная творчества и учебы в Усинске</p>
+        <!--<button class="btn">Начать путешествие</button>-->
+
+        <div class="floating-pens" id="pens-container"></div>
+    </div>
+
+    <div class="content">
+        <!-- Акции и промо -->
+        <div class="promo-banner" id="sale">
+            <h2>Галактические скидки до 50%!</h2>
+            <p>Только этой неделю специальные предложения на лучшие товары для школы и творчества</p>
+            <div class="timer" id="countdown">07:23:45</div>
+            <button class="btn">Посмотреть акции</button>
+        </div>
+
+        <!-- Хиты продаж -->
+        <h2 class="section-title" id="products">Космические хиты</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Товары, которые покорили наших покупателей</p>
+
+        <div class="products">
+            <div class="product">
+                <div class="bestseller-badge">Хит</div>
+                <h3>Ручки-невесомость</h3>
+                <p>Пишут плавно, как по воздуху. 5 цветов в наборе.</p>
+                <p class="price">120 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Ручки-невесомость', 120)">В корзину</button>
+            </div>
+            <div class="product">
+                <div class="bestseller-badge">Хит</div>
+                <h3>Тетради Галактика</h3>
+                <p>96 листов с мерцающими страницами. Твердая обложка.</p>
+                <p class="price">250 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Тетради Галактика', 250)">В корзину</button>
+            </div>
+            <div class="product">
+                <div class="bestseller-badge">Хит</div>
+                <h3>Карандаши Комета</h3>
+                <p>Яркие следы на бумаге. Набор 12 цветов.</p>
+                <p class="price">85 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Карандаши Комета', 85)">В корзину</button>
+            </div>
+            <div class="product">
+                <div class="bestseller-badge">Хит</div>
+                <h3>Планшет-орбита</h3>
+                <p>Для записей в любом положении. В комплекте клипса.</p>
+                <p class="price">450 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Планшет-орбита', 450)">В корзину</button>
+            </div>
+        </div>
+
+        <!-- Акционные товары -->
+        <h2 class="section-title">Горящие предложения</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Успейте купить по специальной цене</p>
+
+        <div class="products">
+            <div class="product">
+                <div class="sale-badge">-30%</div>
+                <h3>Набор фломастеров "Радуга"</h3>
+                <p>24 цвета с тонким и толстым наконечником</p>
+                <p class="old-price">600 ₽</p>
+                <p class="price">420 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Набор фломастеров "Радуга"', 420)">В корзину</button>
+            </div>
+            <div class="product">
+                <div class="sale-badge">-25%</div>
+                <h3>Альбом для рисования</h3>
+                <p>40 листов, плотная бумага 200 г/м²</p>
+                <p class="old-price">400 ₽</p>
+                <p class="price">300 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Альбом для рисования', 300)">В корзину</button>
+            </div>
+            <div class="product">
+                <div class="sale-badge">-50%</div>
+                <h3>Пенал "Космос"</h3>
+                <p>2 отделения, металлическая фурнитура</p>
+                <p class="old-price">800 ₽</p>
+                <p class="price">400 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Пенал "Космос"', 400)">В корзину</button>
+            </div>
+            <div class="product">
+                <div class="sale-badge">-20%</div>
+                <h3>Набор гелевых ручек</h3>
+                <p>10 цветов с блестками, 0.7 мм</p>
+                <p class="old-price">250 ₽</p>
+                <p class="price">200 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Набор гелевых ручек', 200)">В корзину</button>
+            </div>
+        </div>
+
+        <!-- Категории -->
+        <h2 class="section-title" id="categories">Наши вселенные</h2>
+        <div class="categories">
+            <div class="category">Школьные товары</div>
+            <div class="category">Творчество</div>
+            <div class="category">Офис</div>
+            <div class="category">Подарки</div>
+            <div class="category">Хобби</div>
+            <div class="category">Канцелярия</div>
+            <div class="category">Бумага</div>
+            <div class="category">Письмо</div>
+        </div>
+
+        <!-- Преимущества -->
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3>Быстрая доставка</h3>
+                <p>Заказы в Усинске доставляем в день оформления</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⭐</div>
+                <h3>Качество</h3>
+                <p>Только проверенные бренды и материалы</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💎</div>
+                <h3>Эксклюзивы</h3>
+                <p>Уникальные товары, которых нет в других магазинах</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎁</div>
+                <h3>Подарки</h3>
+                <p>Приятные сюрпризы для постоянных клиентов</p>
+            </div>
+        </div>
+
+        <!-- Отзывы -->
+        <h2 class="section-title">Отзывы космонавтов</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>Лучший магазин канцелярии в Усинске! Всегда нахожу что-то необычное для своих творческих проектов. Особенно любят их тетради с оригинальными обложками.</p>
+                <div class="testimonial-author">Анна, художник</div>
+            </div>
+            <div class="testimonial">
+                <p>Закупаюсь здесь всем для школы. Качество товаров на высоте, а цены приятно радуют. Персонал всегда подскажет и поможет с выбором.</p>
+                <div class="testimonial-author">Сергей, учитель</div>
+            </div>
+            <div class="testimonial">
+                <p>Ребенок в восторге от наборов для творчества! А я рада скидкам и акциям, которые регулярно проходят в магазине. Рекомендую всем родителям!</p>
+                <div class="testimonial-author">Ольга, мама второклассника</div>
+            </div>
+        </div>
+
+        <!-- Контакты -->
+        <div class="contact-info" id="contacts">
+            <h2 style="margin-top: 0; color: white;">Как нас найти</h2>
+            <p><strong>Адрес:</strong> г. Усинск, ул. Строителей, 5А</p>
+            <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+            <p><strong>Часы работы:</strong> 9:00 - 20:00 ежедневно</p>
+            <p><strong>Email:</strong> planeta_office@mail.ru</p>
+
+            <button class="btn" style="margin-top: 1.5rem;">Написать нам</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Магазин канцелярии "Планета"</p>
+        <p>г. Усинск, ул. Строителей, 5А</p>
+    </footer>
+
+    <script>
+        // Создаем летающие ручки
+        const pensContainer = document.getElementById('pens-container');
+        const pens = ['✏️', '🖋️', '✒️', '🖊️', '📝', '🖍', '✂️', '📎', '🖇', '📐', '📏', '📌'];
+
+        for (let i = 0; i < 20; i++) {
+            const pen = document.createElement('div');
+            pen.className = 'pen';
+            pen.textContent = pens[Math.floor(Math.random() * pens.length)];
+            pen.style.left = Math.random() * 100 + '%';
+            pen.style.animationDuration = 5 + Math.random() * 15 + 's';
+            pen.style.animationDelay = Math.random() * 5 + 's';
+            pen.style.fontSize = (1 + Math.random() * 2) + 'rem';
+            pensContainer.appendChild(pen);
+        }
+
+        // Параллакс эффект для звезд
+        document.addEventListener('mousemove', (e) => {
+            const stars = document.querySelector('.stars');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            stars.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
+        });
+
+        // Анимация при скролле
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.product, .feature, .testimonial').forEach((el, index) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(50px)';
+            el.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+            observer.observe(el);
+        });
+
+        // Таймер обратного отсчета
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 0);
+
+            const diff = endOfDay - now;
+
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').textContent =
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Анимация категорий
+        document.querySelectorAll('.category').forEach(category => {
+            category.addEventListener('mouseover', () => {
+                const emojis = ['✏️', '📚', '🎨', '📝', '✂️', '📌', '📎', '🖇'];
+                const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+                category.textContent = `${emoji} ${category.textContent}`;
+            });
+
+            category.addEventListener('mouseout', () => {
+                category.textContent = category.textContent.split(' ').slice(1).join(' ');
+            });
+        });
+
+        // Изменение шапки при скролле
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Корзина
+        let cartCount = 0;
+        
+        function addToCart(productName, price) {
+            cartCount++;
+            document.getElementById('cart-counter').textContent = cartCount;
+            
+            // Анимация добавления в корзину
+            const counter = document.getElementById('cart-counter');
+            counter.style.transform = 'scale(1.5)';
+            setTimeout(() => {
+                counter.style.transform = 'scale(1)';
+            }, 300);
+            
+            // Можно добавить уведомление
+            alert(`Товар "${productName}" добавлен в корзину!\nЦена: ${price} ₽`);
+        }
+    </script>
+</body>
+</html>

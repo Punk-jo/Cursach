@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Акции - Планета канцелярии</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="header-logo">
+            🌟 Планета канцелярии
+        </a>
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="sale.html" class="nav-link active">Акции</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <div class="cart-btn">
+                <button class="btn">Корзина 🛒</button>
+                <span class="cart-counter" id="cart-counter">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="space" style="height: 50vh;">
+        <div class="stars"></div>
+        <h1 class="title">Галактические скидки</h1>
+        <p class="subtitle">Специальные предложения только этой недели</p>
+    </div>
+
+    <div class="content">
+        <div class="promo-banner">
+            <h2>Скидки до 70% на все товары!</h2>
+            <p>Только до конца месяца специальные условия для наших покупателей</p>
+            <div class="timer" id="countdown">07:23:45</div>
+        </div>
+
+        <h2 class="section-title">Горящие предложения</h2>
+
+        <div class="products">
+            <div class="product">
+                <div class="sale-badge">-50%</div>
+                <h3>Набор маркеров</h3>
+                <p>12 цветов для досок и стекла</p>
+                <p class="old-price">800 ₽</p>
+                <p class="price">400 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Набор маркеров', 400)">В корзину</button>
+            </div>
+            
+            <!-- Добавьте больше товаров по аналогии -->
+        </div>
+
+        <div class="promo-banner" style="background: linear-gradient(135deg, #292F36 0%, #4ECDC4 100%);">
+            <h2>Набор первоклассника со скидкой 30%</h2>
+            <p>Все необходимое для школы в одном наборе</p>
+            <button class="btn">Подробнее</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Магазин канцелярии "Планета"</p>
+        <p>г. Усинск, ул. Строителей, 5А</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

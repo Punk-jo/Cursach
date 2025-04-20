@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Планета канцелярии</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Тот же стиль что и для login.html -->
+    <style>
+        /* ... тот же CSS что и выше ... */
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="header-logo">
+            🌟 Планета канцелярии
+        </a>
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="login.html" class="nav-link">Войти</a>
+            <a href="register.html" class="nav-link active">Регистрация</a>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <div class="floating-pens" id="pens-container"></div>
+        <div class="planet"></div>
+        
+        <form class="auth-form">
+            <h1 class="form-title">Регистрация</h1>
+            
+            <div class="form-group">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" id="name" class="form-input" placeholder="Ваше имя" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="form-label">Электронная почта</label>
+                <input type="email" id="email" class="form-input" placeholder="ваш@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password" class="form-label">Пароль</label>
+                <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password" class="form-label">Подтвердите пароль</label>
+                <input type="password" id="confirm-password" class="form-input" placeholder="••••••••" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">
+                    <input type="checkbox" required> Я согласен с условиями использования
+                </label>
+            </div>
+            
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            
+            <div class="auth-footer">
+                <p>Уже есть аккаунт? <a href="login.html" class="auth-link">Войдите</a></p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2023 Магазин канцелярии "Планета"</p>
+        <p>г. Усинск, ул. Строителей, 5А</p>
+    </footer>
+
+    <script>
+        // Тот же скрипт что и для login.html
+    </script>
+</body>
+</html>

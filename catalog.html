@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Каталог - Планета канцелярии</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="header-logo">
+            🌟 Планета канцелярии
+        </a>
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link active">Каталог</a>
+            <a href="sale.html" class="nav-link">Акции</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+            <div class="cart-btn">
+                <button class="btn">Корзина 🛒</button>
+                <span class="cart-counter" id="cart-counter">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="catalog-header">
+        <h1>Космический каталог</h1>
+        <p>Более 1000 товаров для учебы, творчества и офиса</p>
+    </div>
+
+    <div class="content">
+        <div class="filters">
+            <div class="filter-group">
+                <div class="filter-title">Категории</div>
+                <select class="price-input">
+                    <option>Все категории</option>
+                    <option>Школьные товары</option>
+                    <option>Творчество</option>
+                    <option>Офис</option>
+                    <option>Подарки</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <div class="filter-title">Цена</div>
+                <div class="price-range">
+                    <input type="number" placeholder="От" class="price-input">
+                    <span>-</span>
+                    <input type="number" placeholder="До" class="price-input">
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <div class="filter-title">Сортировка</div>
+                <select class="price-input">
+                    <option>По популярности</option>
+                    <option>По возрастанию цены</option>
+                    <option>По убыванию цены</option>
+                    <option>По новизне</option>
+                </select>
+            </div>
+            
+            <button class="btn" style="width: 100%;">Применить фильтры</button>
+        </div>
+
+        <div class="sort-bar">
+            <div>Найдено 124 товара</div>
+            <div>Сортировка: <strong>По популярности</strong></div>
+        </div>
+
+        <div class="catalog-grid">
+            <div class="product">
+                <h3>Ручки космические</h3>
+                <p>Набор 5 цветов с неоновым эффектом</p>
+                <p class="price">150 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Ручки космические', 150)">В корзину</button>
+            </div>
+            
+            <div class="product">
+                <div class="bestseller-badge">Хит</div>
+                <h3>Блокнот "Галактика"</h3>
+                <p>80 листов, твердая обложка</p>
+                <p class="price">320 ₽</p>
+                <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="addToCart('Блокнот "Галактика"', 320)">В корзину</button>
+            </div>
+            
+            <!-- Добавьте больше товаров по аналогии -->
+        </div>
+
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn">5</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Магазин канцелярии "Планета"</p>
+        <p>г. Усинск, ул. Строителей, 5А</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

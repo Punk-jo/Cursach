@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Контакты - Планета канцелярии</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="header-logo">
+            🌟 Планета канцелярии
+        </a>
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="sale.html" class="nav-link">Акции</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="contacts.html" class="nav-link active">Контакты</a>
+            <div class="cart-btn">
+                <button class="btn">Корзина 🛒</button>
+                <span class="cart-counter" id="cart-counter">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="space" style="height: 50vh;">
+        <div class="stars"></div>
+        <h1 class="title">Как нас найти</h1>
+        <p class="subtitle">Мы всегда рады видеть вас в нашем магазине</p>
+    </div>
+
+    <div class="content">
+        <div class="contact-map">
+            <!-- Здесь будет карта -->
+            <div style="width: 100%; height: 400px; background: #eee; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                [Карта: г. Усинск, ул. Строителей, 5А]
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <div class="contact-info">
+                <h2>Контактная информация</h2>
+                <p><strong>Адрес:</strong> г. Усинск, ул. Строителей, 5А</p>
+                <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+                <p><strong>Email:</strong> planeta_office@mail.ru</p>
+                <p><strong>Часы работы:</strong> 9:00 - 20:00 ежедневно</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">VK</a>
+                    <a href="#" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Напишите нам</h2>
+                <form>
+                    <input type="text" placeholder="Ваше имя" class="form-input">
+                    <input type="email" placeholder="Email" class="form-input">
+                    <input type="tel" placeholder="Телефон" class="form-input">
+                    <textarea placeholder="Ваше сообщение" class="form-input" style="height: 150px;"></textarea>
+                    <button type="submit" class="btn" style="width: 100%;">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Магазин канцелярии "Планета"</p>
+        <p>г. Усинск, ул. Строителей, 5А</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
